@@ -6,7 +6,7 @@ import { errorMiddleware } from "./middlewares/errors";
 
 const app = express();
 // Middleware to parse incoming JSON requests
-app.use(express.json());  // This line is crucial to parse JSON body
+app.use(express.json());
 
 app.use('/api', rootRouter);
 
